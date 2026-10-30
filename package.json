@@ -1,0 +1,21 @@
+{
+  "name": "youtube-transcripter",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "ls": "bun src/cli.ts ls",
+    "download": "bun src/cli.ts download",
+    "transcribe": "bun src/cli.ts transcribe",
+    "delete": "bun src/cli.ts delete",
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "opencc-js": "1.0.5"
+  }
+}
