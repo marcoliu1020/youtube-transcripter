@@ -1,2 +1,17 @@
+# dependencies
 node_modules/
+
+# 影片音訊、辨識結果與逐字稿：檔案大（每支約 100 MB），且是別人的影片內容
 output/
+
+# secrets：Bun 會自動載入 .env，之後若接 Claude API 會放 API key
+.env
+.env.*
+
+# 個人環境
+.DS_Store
+.claude/settings.local.json
+
+# bun test --coverage
+coverage/
+*.log
